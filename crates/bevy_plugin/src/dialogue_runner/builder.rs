@@ -18,7 +18,7 @@ pub struct DialogueRunnerBuilder {
     asset_providers: HashMap<TypeId, Box<dyn AssetProvider>>,
     library: YarnLibrary,
     commands: YarnCommands,
-    compilation: Compilation,
+    pub compilation: Compilation,
     localizations: Option<Localizations>,
     asset_server: SkipDebug<AssetServer>,
 }
